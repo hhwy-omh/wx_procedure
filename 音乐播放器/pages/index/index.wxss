@@ -1,0 +1,97 @@
+view{
+  font-size:32rpx;
+}
+.Search{
+  width:100%;
+  display:flex;
+  flex-flow:row;
+}
+
+.Search .search_img{
+  height:30px;
+  width:10%;
+  margin:5px;
+}
+
+.Search input{
+  margin:5px;
+  border:1px solid rgb(236, 105, 72);
+  height:30px;
+  border-radius:5px;
+  width:80%;
+}
+
+.Radio{
+  margin-top: 10rpx;
+  width:100%;
+}
+
+.col3s{
+  flex-wrap:wrap;
+  width:33%;
+  margin-bottom:10rpx;
+  display:inline-flex;
+  justify-content:center;
+}
+
+.col3s image{
+  width:100%;
+  height:200rpx;
+  padding-left:4%;
+}
+
+.titles{
+  width:100%;
+  font-size: 38rpx;
+  background-color: #ccc;
+  padding:5px 5px;
+}
+
+.Player{
+  background-color: rgba(201, 192, 192, 0.952);
+  width:100%;
+  height:130rpx;
+  position: fixed;
+  display:flex;
+  flex-flow : row;
+  bottom:0;
+}
+
+.player_ti2{
+  margin:10rpx 20rpx;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.player_ti3{
+  margin:0 80rpx 0 40rpx;
+}
+
+.play_text{ 
+  font-size: 50rpx;
+}
+.play_author{
+  margin-left:10rpx;
+  color:rgb(116, 113, 113);
+}
+
+.Player .title_img{
+  width:110rpx;
+  height:110rpx;
+  border-radius: 55rpx;
+  margin:10rpx 30rpx;
+}
+
+.Player .title_imgs{
+  width:80rpx;
+  height:80rpx;
+  border-radius: 40rpx;
+  margin:26rpx 20rpx 26rpx 100rpx;
+}
+.Player .title_imgss{
+  width:90rpx;
+  height:90rpx;
+  border-radius: 40rpx;
+  margin:26rpx 20rpx;
+}
+

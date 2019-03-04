@@ -1,0 +1,7 @@
+<image class="img" src="{{music[0].pic}}"></image>
+<view>
+     <view class="musics" wx:for="{{music}}" wx:key="lite" id="{{item.url}}+{{item.title}}+{{item.author}}+{{item.pic}}" bindtap='getProjectDetail' >
+          <view class="play_text">{{item.title}}</view>
+          <view class="play_author">{{item.author}}</view>
+     </view>
+</view>

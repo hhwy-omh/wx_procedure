@@ -1,0 +1,31 @@
+<view class="Search">
+<!--提交按钮  -->
+<input type="text" name="id" placeholder='  输入歌名' bindinput ="userNameInput"/>
+<image class="search_img" bindtap="loginBtnClick" src="./../../images/search.png"/> 
+</view>
+<view class="titles"><text>音乐排行榜</text></view>
+<view class="Radio">
+     <view class="col3s" wx:for="{{rankings}}" wx:key="lite">
+      <image class="images" src="{{item.pic_s192}}" id="{{item.type}}" bindtap='gotoProjectDetail' />
+      <text>{{item.name}}</text>
+     </view>
+</view>
+<view class="titles"><text>音乐电台</text></view>
+<view class="Radio">
+     <view class="col3s" wx:for="{{queryResult}}" wx:key="lite">
+      <image class="images" src="{{item.thumb}}" id="{{item.ch_name}}" bindtap='getProjectDetail' />
+      <text>{{item.name}}</text>
+     </view>
+</view>
+<view class="Player">
+  <view class="player_ti1">
+    <image class="title_img" src="{{img_url}}"/>
+  </view>
+  <view class="player_ti2">
+    <view class="play_text">{{title}}</view>
+    <view class="play_author">{{author}}</view>
+  </view>
+  <view class="player_ti3">
+      <image class="title_imgs" src="{{off_on_img}}" id="{{music_url}}" bindtap='play_sterat'/>
+  </view>
+</view>
